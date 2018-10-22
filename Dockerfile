@@ -38,5 +38,7 @@ ADD docker/adb/insecure_shared_adbkey.pub /root/.android/adbkey.pub
 WORKDIR /browsertime
 
 COPY docker/scripts/start.sh /start.sh
+RUN mkdir config
+ADD docker/config/google-chrome /config/google-chrome
 
 ENTRYPOINT ["/start.sh"]
