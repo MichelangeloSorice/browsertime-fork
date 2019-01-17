@@ -1,1 +1,2 @@
-./bin/browsertime.js https://www.pythoncentral.io --screenshot -n 10
+./bin/browsertime.js https://www.pythoncentral.io --screenshot -n 1 --video=false --visualMetrics=false
+--chrome.args=--profile-directory='Profile 6' --chrome.args=--user-data-dir=/home/michelangelo/.config/google-chrome
